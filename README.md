@@ -1,7 +1,7 @@
 # 🏠 Smart Complaint Management System
 
 ## 📌 Overview
-The **Smart Complaint Management System** is a full-stack web application designed to streamline the process of submitting and resolving complaints in hostel or institutional environments. It provides a structured workflow for users to raise complaints and for administrators to manage and resolve them efficiently.
+The Smart Complaint Management System is a full-stack web application designed to streamline the process of submitting and resolving complaints in hostel or institutional environments. It provides a structured workflow for users to raise complaints and for administrators to manage and resolve them efficiently.
 
 This system improves transparency, reduces manual work, and ensures faster grievance resolution.
 
@@ -25,19 +25,16 @@ This system improves transparency, reduces manual work, and ensures faster griev
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
-- **Backend:** Node.js, Express.js
-- **Database:** PostgreSQL
-- **Architecture:** REST API (Client-Server Model)
+Frontend: React.js, HTML5, CSS3, JavaScript (ES6+)  
+Backend: Node.js, Express.js  
+Database: PostgreSQL  
+Architecture: REST API (Client-Server Model)
 
 ---
 
 ## 🏗️ System Architecture
+
 React Frontend → Node.js + Express Backend → PostgreSQL Database
-
-
----
-
 
 ---
 
@@ -45,87 +42,106 @@ React Frontend → Node.js + Express Backend → PostgreSQL Database
 
 Smart-Complaint-Management-System/
 │
-├── backend/ # Node.js + Express backend
-├── frontend/ # React frontend
-├── images/ # Screenshots of project UI
-├── database.sql # Database schema
+├── backend/
+│   ├── controller/
+│   ├── routes/
+│   ├── middleware/
+│   ├── db.js
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── utils/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── images/
+│   ├── login.png
+│   ├── signup.png
+│   ├── studentDashboard.png
+│   ├── wardenDashboard.png
+│   └── createComplaint.png
+│
+├── database.sql
 └── README.md
 
-⚙️ Installation & Setup
+---
 
+## ⚙️ Installation & Setup
 
-1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 git clone https://github.com/shireeshabasani/Smart-Complaint-Management-System.git
 
+---
 
-2️⃣ Backend Setup
+### 2️⃣ Backend Setup
+cd backend
+npm install
 
-
-cd backendnpm install
 Create .env file:
-PORT=5000DATABASE_URL=your_postgresql_connection_stringJWT_SECRET=your_secret_key
+PORT=5000
+DATABASE_URL=your_postgresql_connection_string
+JWT_SECRET=your_secret_key
+
 Run backend:
 npm start
 
-3️⃣ Frontend Setup
+---
 
+### 3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
 
-cd frontendnpm installnpm run dev
+---
 
-4️⃣ Database Setup
-
-
+### 4️⃣ Database Setup
 CREATE DATABASE complaint_system;
-Import database.sql file into PostgreSQL.
 
-📡 API Endpoints
+Import database.sql into PostgreSQL.
 
+---
 
-MethodEndpointDescriptionPOST/api/registerRegister userPOST/api/loginUser loginPOST/api/complaintCreate complaintGET/api/complaintsGet all complaintsPUT/api/complaint/:idUpdate complaint status
+## 📡 API Endpoints
 
+POST /api/register → Register user  
+POST /api/login → User login  
+POST /api/complaint → Create complaint  
+GET /api/complaints → Get all complaints  
+PUT /api/complaint/:id → Update complaint status  
 
+---
 
-📈 Future Improvements
+## 📈 Future Improvements
+- Email & SMS notifications
+- Real-time chat system
+- File upload support
+- Mobile app version
+- AI-based complaint classification
 
+---
 
-Email & SMS notifications
+## 👨‍💻 Developer
+Shireesha Basani  
+GitHub: https://github.com/shireeshabasani
 
+---
 
-Real-time chat between user and admin
-
-
-File upload for complaint proof
-
-
-Mobile application version
-
-
-AI-based complaint classification system
-
-
-
-👨‍💻 Developer
-Shireesha Basani
-GitHub: shireeshabasani
-
-📜 License
+## 📜 License
 This project is for educational purposes only.
 
-⭐ Key Highlights
+---
 
-
-Full-stack MERN-style architecture (React + Node + PostgreSQL)
-
-
-Real-world complaint management system
-
-
-REST API integration
-
-
-Clean UI with structured workflow
-
-
-Beginner-friendly but industry-relevant project
-
-
+## ⭐ Key Highlights
+- Full-stack React + Node + PostgreSQL project
+- Real-world complaint management system
+- REST API integration
+- Clean and structured workflow
+- Internship/placement-ready project
