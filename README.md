@@ -38,41 +38,8 @@ React Frontend → Node.js + Express Backend → PostgreSQL Database
 
 ---
 
-## 📂 Project Structure
 
-Smart-Complaint-Management-System/
-│
-├── backend/
-│   ├── controller/
-│   ├── routes/
-│   ├── middleware/
-│   ├── db.js
-│   ├── server.js
-│   ├── package.json
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── utils/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   ├── package.json
-│   └── vite.config.js
-│
-├── images/
-│   ├── login.png
-│   ├── signup.png
-│   ├── studentDashboard.png
-│   ├── wardenDashboard.png
-│   └── createComplaint.png
-│
-├── database.sql
-└── README.md
 
----
 
 ## ⚙️ Installation & Setup
 
