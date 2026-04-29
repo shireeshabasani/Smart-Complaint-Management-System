@@ -43,50 +43,24 @@ React Frontend → Node.js + Express Backend → PostgreSQL Database
 
 ## 📂 Project Structure
 
-bash id="structfinal1"
 Smart-Complaint-Management-System/
 │
-├── backend/
-│   ├── controller/
-│   ├── routes/
-│   ├── middleware/
-│   ├── db.js
-│   ├── server.js
-│   ├── package.json
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── utils/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
-│
-├── images/
-│   ├── login.png
-│   ├── signup.png
-│   ├── studentDashboard.png
-│   ├── studentComplaint.png
-│   ├── wardenDashboard.png
-│   └── createComplaint.png
-│
-├── database.sql
-├── docker-compose.yml
+├── backend/ # Node.js + Express backend
+├── frontend/ # React frontend
+├── images/ # Screenshots of project UI
+├── database.sql # Database schema
 └── README.md
 
-
-
 ⚙️ Installation & Setup
+
+
 1️⃣ Clone Repository
 git clone https://github.com/shireeshabasani/Smart-Complaint-Management-System.git
 
 
 2️⃣ Backend Setup
+
+
 cd backendnpm install
 Create .env file:
 PORT=5000DATABASE_URL=your_postgresql_connection_stringJWT_SECRET=your_secret_key
@@ -94,13 +68,19 @@ Run backend:
 npm start
 
 3️⃣ Frontend Setup
+
+
 cd frontendnpm installnpm run dev
 
 4️⃣ Database Setup
+
+
 CREATE DATABASE complaint_system;
 Import database.sql file into PostgreSQL.
 
 📡 API Endpoints
+
+
 MethodEndpointDescriptionPOST/api/registerRegister userPOST/api/loginUser loginPOST/api/complaintCreate complaintGET/api/complaintsGet all complaintsPUT/api/complaint/:idUpdate complaint status
 
 
